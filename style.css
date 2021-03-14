@@ -1,0 +1,142 @@
+/* -*- coding: utf-8-unix -*- */
+
+@import "https://fonts.googleapis.com/css?family=Karla:400,700";
+@import "https://fonts.googleapis.com/css?family=Montserrat:900";
+
+html {
+  font-family: Karla,sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: white;
+  color: #404444;
+  font-family: Karla, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+a {
+  color: #3465a4;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid #3465a4;
+  color: #3465a4;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+/* Bootstrap */
+
+.btn {
+  border-radius: 999px !important;
+  border: none !important;
+  font-size: 16px !important;
+  margin: 8px !important;
+}
+
+.btn:active, .btn:focus {
+  /* Use background colors instead of normal browser hints. */
+  border: none !important;
+  outline: none !important;
+}
+
+.btn-primary {
+  background-color: #4a90d9 !important;
+  color: white !important;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #5b9add !important;
+  color: white !important;
+}
+
+/* Sections */
+
+.section {
+  margin: 0;
+  padding: 2rem 4rem;
+}
+
+@media (max-width: 500px), (max-height: 500px) {
+  .section {
+    padding: 1rem 1rem;
+  }
+}
+
+.section > * {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+/* Header */
+
+#screenshot {
+  background: url("screenshot.jpg") no-repeat center top;
+  background-size: cover;
+  height: 345px;
+}
+
+#header {
+  text-align: center;
+}
+
+#header > * {
+  margin: 0;
+  text-align: center;
+}
+
+#header h1 {
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+#header p {
+  margin-top: 1rem;
+}
+
+/* Features */
+
+#features {
+  padding-top: 0;
+}
+
+#features p {
+  max-width: 41em;
+}
+
+/* Footer */
+
+#footer {
+  padding-bottom: 4rem;
+  padding-top: 0;
+  text-align: center;
+}
+
+#footer a {
+  color: #4a90d9;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#footer a:hover {
+  border-bottom: 3px solid #4a90d9;
+}
+
+#footer p {
+  margin-top: 1rem;
+  opacity: 0.7;
+  text-align: center;
+}
