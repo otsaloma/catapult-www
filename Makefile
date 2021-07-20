@@ -24,7 +24,7 @@ deploy:
 dist:
 	$(MAKE) clean
 	mkdir dist
-	cp *.css *.html *.ico *.jpg *.png *.svg dist
+	cp *.css *.html *.jpg *.png *.svg dist
 	sed -ri "s|\?v=dev\"|?v=$(VERSION)\"|g" dist/*.html
 	! grep "?v=dev" dist/*.html
 	./bundle-assets.py dist/*.html
