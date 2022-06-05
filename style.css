@@ -84,6 +84,15 @@ p {
   height: 345px;
 }
 
+#screenshot p {
+  font-size: 12px;
+  opacity: 0.8;
+  position: absolute;
+  right: 12px;
+  text-align: right;
+  top: 315px;
+}
+
 #header {
   text-align: center;
 }
