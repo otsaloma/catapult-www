@@ -7,8 +7,6 @@ clean:
 
 deploy:
 	$(MAKE) dist
-	$(if $(shell git status --porcelain),\
-	  $(error "Uncommited changes!"))
 	@echo "Uploading HTML files..."
 	aws s3 sync dist/ s3://otsaloma.io/catapult/ \
 	--exclude "*" \
