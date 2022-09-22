@@ -1,6 +1,6 @@
 # -*- coding: utf-8-unix -*-
 
-VERSION = `date +%Y%m%d%H%M`
+VERSION = `date +%s`
 
 clean:
 	rm -rf dist
@@ -26,5 +26,6 @@ dist:
 	sed -ri "s|\?v=dev\"|?v=$(VERSION)\"|g" dist/*.html
 	! grep "?v=dev" dist/*.html
 	./bundle-assets.py dist/*.html
+	rm dist/*.css
 
 .PHONY: clean deploy dist
